@@ -70,7 +70,7 @@ const API_ENDPOINT= "https://location-selector.labs.crio.do/countries";
     <h2>Select Location</h2>
     <div style = {{display:"flex", gap:"20px"}}>
     
-    <select style={{width:"250px"}} value={countryName} onChange={handleCountryChange}>
+    <select value={countryName} onChange={handleCountryChange}>
          <option value= "">Select Country</option>
         {countries.map((country_name)=>(
           <option key={country_name} value={country_name}>{country_name}</option>
